@@ -1,4 +1,4 @@
-name: Zip ALL of template's content so the user can download it at ease
+name: ezZipper (for template folders)
 
 on:
   push:
