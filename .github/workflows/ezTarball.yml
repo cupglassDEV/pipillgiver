@@ -20,7 +20,7 @@ jobs:
 
       - name: Move tar file to root directory
         run: |
-          mv template.tar.gz ./
+          mv template.tar.gz ../
           ls -la
 
       - name: Commit and push
