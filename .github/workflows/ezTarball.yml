@@ -1,5 +1,6 @@
 name: ezTarball
-
+permissions:
+  contents: write
 on:
   push:
     paths:
