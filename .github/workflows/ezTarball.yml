@@ -1,0 +1,32 @@
+name: quick acces
+
+on:
+  push:
+    paths:
+      - 'template/**'
+
+jobs:
+  tar-and-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Tar files
+        run: |
+          tar -czvf template.tar.gz template/*
+          ls -la
+
+      - name: Move tar file to root directory
+        run: |
+          mv template.tar.gz ./
+          ls -la
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "ezTarball (for 'template' folder)"
+          git add template.tar.gz
+          git commit -m "Add tarred template files"
+          git push
