@@ -21,10 +21,12 @@ jobs:
           zip -r template.zip template/*
 
       - name: Move zip file to the root directory
-        run: mv template.zip ../template.zip
+        run: mv template.zip ./template.zip
 
       - name: Commit and push
         run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "ezZipper"
           git add template.zip
           git commit -m "Add zipped template files"
           git push
