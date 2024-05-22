@@ -21,7 +21,7 @@ jobs:
           zip -r template.zip template/*
 
       - name: Move zip file to the root directory
-        run: mv template.zip ./template.zip
+        run: mv template.zip ./
 
       - name: Commit and push
         run: |
