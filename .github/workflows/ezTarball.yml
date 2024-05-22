@@ -2,8 +2,6 @@ name: ezTarball
 permissions:
   contents: write
 on:
-  delete:
-      - 'template/**'
   push:
     paths:
       - 'template/**'
