@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Install zip
         run: sudo apt-get install zip
@@ -25,8 +25,6 @@ jobs:
 
       - name: Commit and push
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "ezZipper (for 'template' folder)"
           git add template.zip
           git commit -m "Add zipped template files"
           git push
