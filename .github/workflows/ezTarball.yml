@@ -21,8 +21,8 @@ jobs:
 
       - name: Commit and push
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "ezTarball (for 'template' folder)"
+          git config user.email "action@github.com"
+          git config user.name "ezTarball (for 'template' folder)"
           git add template.tar.gz
-          git commit -m "Add tarred template files"
+          git commit -m "Nambahin tar biar yg pada di setup.sh bisa lebih lancar lg"
           git push
