@@ -11,3 +11,4 @@ echo 'Sending to:' | sudo piper --model ../piper_models/en_US-hfc_male-medium.on
 echo 'Telegram' | sudo piper --model ../piper_models/en_US-hfc_male-medium.onnx --output_file c_tg_narrator.wav
 echo 'You are receiving a text from:' | sudo piper --model ../piper_models/en_US-hfc_male-medium.onnx --output_file txtreceived_msg_narrator.wav
 echo 'Heres your pill' | sudo piper --model ../piper_models/en_US-hfc_male-medium.onnx --output_file opened_narrator.wav
+echo 'In' | sudo piper --model ../piper_models/en_US-hfc_male-medium.onnx --output_file in_narrator.wav
