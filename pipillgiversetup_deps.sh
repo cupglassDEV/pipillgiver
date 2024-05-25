@@ -7,9 +7,10 @@
 #wget https://bit.ly/pipillgiver-u_setupv1 && sh pipillgiver.sh
 #ambil semua package yg dibutuhkan
 #opsi klo udah punya paket debiannya, ntar di install
+USR=$(id -u -n)
 SPCHCATAVAILABLE=$0
-cd ~/
-sudo mkdir ~/piper_models
+cd /home/$USR/
+sudo mkdir $USR/piper_models
 #install paket yang diperlukan
 #Kalau unzip (bukan tar) udah ada paket bawaannya di rpi 
 #unduh piper
