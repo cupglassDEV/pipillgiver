@@ -17,7 +17,6 @@ jobs:
       - name: Tar files
         run: |
           tar -czvf template.tar.gz ./template/*
-          ls -la
 
       - name: Commit and push
         run: |
